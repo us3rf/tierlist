@@ -1,5 +1,5 @@
 const update = {
-   thread: "https://www.twitter.com/us3rf",
+   thread: 'https://www.twitter.com/us3rf',
     time: 1658132830854
 }
 
