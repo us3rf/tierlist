@@ -51,7 +51,7 @@ const sources = [
     { name: 'Jonathan Shrager', type: 'journalist', tier: 4, workplace: 'Twitter', link: 'JonathanShrager' },
     // Tier 5
     { name: 'Phil Thomas', type: 'journalist', tier: 5, workplace: 'TheS*n', link: '' },
-    { name: 'Harry Pratt', type: 'journalist', tier: 5, workplace: 'TheS*n', link: 'gharrypratt' },
+    { name: 'Harry Pratt', type: 'journalist', tier: 5, workplace: 'TheDailyStar', link: 'gharrypratt' },
     { name: 'Jeremy Cross', type: 'journalist', tier: 5, workplace: 'TheDailyStar', link: 'CrossyDailyStar' },
     { name: 'Steve Bates (or 4)', type: 'journalist', tier: 5, workplace: 'TheMirror', link: 'stevebates' },
     { name: 'Tom Hopkinson', type: 'journalist', tier: 5, workplace: 'TheMirror', link: 'TomHopkinson' },
