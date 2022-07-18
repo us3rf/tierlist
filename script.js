@@ -53,7 +53,7 @@ const sources = [
     { name: 'Phil Thomas', type: 'journalist', tier: 5, workplace: 'TheS*n', link: '' },
     { name: 'Harry Pratt', type: 'journalist', tier: 5, workplace: 'TheS*n', link: 'gharrypratt' },
     { name: 'Jeremy Cross', type: 'journalist', tier: 5, workplace: 'TheDailyStar', link: 'CrossyDailyStar' },
-    { name: 'Steve Bates', type: 'journalist', tier: 5, workplace: 'TheS*n', link: 'stevebates' },
+    { name: 'Steve Bates (or 4)', type: 'journalist', tier: 5, workplace: 'TheMirror', link: 'stevebates' },
     { name: 'Tom Hopkinson', type: 'journalist', tier: 5, workplace: 'TheMirror', link: 'TomHopkinson' },
     { name: 'Tom McDermott', type: 'journalist', tier: 5, workplace: 'unemployed', link: 'mrtommcdermott' },
     { name: 'Sam Pilger', type: 'journalist', tier: 5, workplace: 'Forbes', link: 'sampilger' },
