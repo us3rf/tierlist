@@ -212,6 +212,7 @@ body {
     align-items: center;
     height: 40px;
     margin: 0 0 1rem 0;
+    justify-content: space-between;
 }
 
 .footer a {
@@ -232,15 +233,13 @@ body {
 
 .footer .subreddit {
     display: flex;
-    flex: 1;
+    flex: 0.5;
     align-items: center;
-}
-
-.footer .explanation{
-
-    margin-left:48%;
+    
     
 }
+
+
 
 @media all and (max-width: 959px) {
     .container {

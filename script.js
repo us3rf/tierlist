@@ -1,6 +1,6 @@
 const update = {
    thread: 'https://www.twitter.com/us3rf',
-    time: 1658132830854
+    time: 1658326273046
 }
 
 const sources = [
@@ -11,6 +11,7 @@ const sources = [
     { name: 'James Ducker', type: 'journalist', tier: 1, workplace: 'TheTelegraph', link: 'TelegraphDucker' },
     { name: 'Simon Peach', type: 'journalist', tier: 1, workplace: 'PA, TheIndependent', link: 'SimonPeach' },
     { name: 'Paul Hirst', type: 'journalist', tier: 1, workplace: 'TheTimes', link: 'hirstclass' },
+    { name: 'Mike McGrath', type: 'journalist', tier: 1, workplace: 'TheTelegraph', link: 'mcgrathmike' },
 
     
     
@@ -23,9 +24,12 @@ const sources = [
     { name: 'Jonathan Northcroft', type: 'journalist', tier: 2, workplace: 'TheTimes', link: 'JNorthcroft' },
     { name: 'Adrian Kajumba', type: 'journalist', tier: 2, workplace: 'DailyMail', link: 'AdrianJKajumba' },
     
+    
+
+    
     // Tier 3
     { name: 'Andy Mitten', type: 'journalist', tier: 3, workplace: 'TheAthletic, TheNational', link: 'AndyMitten' },
-    { name: 'Samuel Luckhurst', type: 'journalist', tier: 3, workplace: 'Manchester Evening News', link: 'samuelluckhurst' },
+    { name: 'Samuel Luckhurst (2.5)', type: 'journalist', tier: 3, workplace: 'Manchester Evening News', link: 'samuelluckhurst' },
     { name: 'Tyrone Marshall', type: 'journalist', tier: 3, workplace: 'Manchester Evening News', link: 'TyMarshall_MEN' },
     { name: 'Alex Crook', type: 'journalist', tier: 3, workplace: 'talkSPORT', link: 'alex_crook' },
     { name: 'Chris Wheeler', type: 'journalist', tier: 3, workplace: 'DailyMail', link: 'ChrisWheelerDM' },
@@ -37,9 +41,9 @@ const sources = [
     { name: 'Melissa Reddy (new)', type: 'journalist', tier: 3, workplace: 'SkySports', link: 'MelissaReddy_' },
     { name: 'Dharmesh Sheth', type: 'journalist', tier: 3, workplace: 'SkySports', link: 'skysports_sheth' },
     { name: 'Pol Ballus (new)', type: 'journalist', tier: 3, workplace: 'TheAthletic', link: 'polballus' },
-    { name: 'Simon Jones', type: 'journalist', tier: 3, workplace: 'DailyMail', link: '' },
+    { name: 'Simon Jones (tends to piggyback but excl are reliable)', type: 'journalist', tier: 3, workplace: 'DailyMail', link: '' },
     { name: 'Mark Critchley', type: 'journalist', tier: 3, workplace: 'TheIndependent', link: 'mjcritchley' },
-
+    { name: 'John Cross (2 for others)', type: 'journalist', tier: 3, workplace: 'DailyMirror', link: 'johncrossmirror' },
     // Tier 4
     { name: 'David McDonnell', type: 'journalist', tier: 4, workplace: 'Mirror', link: 'DiscoMirror' },
     { name: 'Alan Nixon (1 for youth/low lvl)', type: 'journalist', tier: 4, workplace: 'TheS*n', link: 'reluctantnicko' },
@@ -49,17 +53,29 @@ const sources = [
     { name: 'Neil Custis (sometimes, more often 5)', type: 'journalist', tier: 4, workplace: 'TheS*n', link: 'ncustisTheSun' },
     { name: 'Duncan Castles (reliable for Mendes/TheTimes)', type: 'journalist', tier: 4, workplace: 'TheTimes/DailyRecord', link: 'DuncanCastles' },
     { name: 'Jonathan Shrager', type: 'journalist', tier: 4, workplace: 'Twitter', link: 'JonathanShrager' },
+    { name: 'Steve Bates', type: 'journalist', tier: 4, workplace: 'TheMirror', link: 'stevebates' },
+    { name: "Pete O'Rourke", type: 'journalist', tier: 4, workplace: 'FootballInsider', link: 'sportspeteo' },
+    { name: "Guillem Balague (okay for Spain)", type: 'journalist', tier: 4, workplace: 'BBC', link: 'GuillemBalague' },
+
     // Tier 5
     { name: 'Phil Thomas', type: 'journalist', tier: 5, workplace: 'TheS*n', link: '' },
     { name: 'Harry Pratt', type: 'journalist', tier: 5, workplace: 'TheDailyStar', link: 'gharrypratt' },
     { name: 'Jeremy Cross', type: 'journalist', tier: 5, workplace: 'TheDailyStar', link: 'CrossyDailyStar' },
-    { name: 'Steve Bates (or 4)', type: 'journalist', tier: 5, workplace: 'TheMirror', link: 'stevebates' },
+    { name: 'Pedro Almeida', type: 'journalist', tier: 5, workplace: 'twitter', link: 'pedrogva6' },
     { name: 'Tom Hopkinson', type: 'journalist', tier: 5, workplace: 'TheMirror', link: 'TomHopkinson' },
     { name: 'Tom McDermott', type: 'journalist', tier: 5, workplace: 'unemployed', link: 'mrtommcdermott' },
     { name: 'Sam Pilger', type: 'journalist', tier: 5, workplace: 'Forbes', link: 'sampilger' },
+    { name: 'Jacque Talbot', type: 'journalist', tier: 5, workplace: 'FootballTransfers', link: 'jac_talbot' },
+    { name: 'Christian Falk', type: 'journalist', tier: 5, workplace: 'Bild', link: 'cfbayern' },
+    { name: 'Indy Kaila', type: 'journalist', tier: 5, workplace: 'KFC', link: 'indykaila' },
+    { name: 'Angelo Mangiante', type: 'journalist', tier: 5, workplace: 'SkyItaly', link: 'angelomangiante' },
+    { name: 'Wayne Veysey (rare hits)', type: 'journalist', tier: 5, workplace: 'FootballInsider', link: 'footyinsider247' },
+    { name: 'Kaveh Solhekol', type: 'journalist', tier: 5, workplace: 'SkySports', link: 'SkyKaveh' },
+
     // Aggregators
     { name: 'United Journal', tier: 'aggregator', link: 'theutdjournal' },
     { name: 'utdreport', tier: 'aggregator', link: 'utdreport' },
+    { name: 'UnitedDistrict', tier: 'aggregator', link: 'utddistrict' },
 ];
 
 sources.forEach(source => {
@@ -87,6 +103,9 @@ document.querySelector('.tier-aggregator .tier-content').appendChild(
         `<div class="tier-notes">These are just aggregators.</div>`
     )
 );
+
+
+
 
 document.querySelector('.last-update a').setAttribute('href', update.thread);
 document.querySelector('.last-update a').textContent = `Last update: ${new Date(update.time).toUTCString().slice(0, 16)}`;
